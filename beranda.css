@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fffdf3;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 120px;
+    gap: 64px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10vh;
+    padding: 0 140px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(58, 53, 65, 0.12);
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    cursor: pointer;
+}
+
+.navbar p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    color: rgb(51, 51, 51, 0.68);
+}
+
+.user-avatar {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.user-avatar img {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    background-image:   linear-gradient(180deg,
+                        rgba(0,0,0,0.3) 0%,
+                        rgba(0,0,0,0.8) 0%),  
+                        url(/images/hero-frame.jfif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 24px;
+    padding: 82px 140px 64px 140px;
+}
+
+.main-inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #fff;
+}
+
+.main-inner h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52.8px;
+}
+
+.main-inner p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+}
+
+.hero-section button {
+    background-color: #3ecf4c;
+    padding: 10px 26px;
+    border-radius: 10px;
+}
+
+.hero-section a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    color: #fff;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+}
+
+.card-list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.list {
+    display: inline-block;
+}
+
+.card-title h3 {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 35.2px;
+    color: #222325;
+}
+
+.card-title p {
+    text-align: left;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    color: rgb(51, 51, 51, 0.68);
+}
+
+.list-inner {
+    flex-direction: row;
+    padding: 12px 36px 12px 0;
+}
+
+.list-inner p {
+    text-align: left;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+}
+
+.font-color-black {
+    color: rgb(51, 51, 51, 0.68);
+}
+
+.font-color-red {
+  color: #f64920;  
+} 
+
+.rectangle {
+    width: 52px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #f64920;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.card-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-desc h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #222325;
+    cursor: pointer;
+}
+
+.card-desc p {
+    height: 44px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: rgb(51, 51, 51, 0.68);
+}
+
+.tutor {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tutor-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.tutor-title p {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    color: #222325;
+}
+
+.tutor-desc {
+    display: flex;
+}
+
+.tutor-desc p {
+    padding-right: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+    color: rgb(51, 51, 51, 0.68);
+}
+
+.tutor-desc .plain-text {
+    font-weight: 400;
+}
+
+.tutor-desc .bold {
+    font-weight: 700;
+}
+
+.rating-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-price h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #3ecf4c;
+}
+
+.rating-price .rating {
+    display: flex;
+    flex-direction: row;
+}
+
+.rating p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+    color: rgb(51, 51, 51, 0.68);
+}
+
+.star {
+    display: flex;
+    flex-direction: row;
+}
+
+.star img {
+    width: 18px;
+    height: 18px;
+}
+
+.closing-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.closing {
+    width: 100%;
+    height: 400px;
+    background-image:   linear-gradient(180deg,
+                        rgba(0,0,0,0.3) 0%,
+                        rgba(0,0,0,0.8) 0%),  
+                        url(/images/closing-frame.jfif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.closing-wrapper {
+    width: 56.25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 40px;
+}
+
+.closing-inner {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.closing-inner p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    letter-spacing: 0.2px;
+    color: #c1c2c4;
+}
+
+.closing-inner-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.closing-inner-desc h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32.2px;
+    color: #fff;
+}
+
+.closing-inner-desc p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    color: #f4f5fa;
+}
+
+.subscribe-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    height: 59px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 8px 8px 8px 32px;
+}
+
+.subscribe-input {
+    width: 100%;
+}
+
+.subscribe-input input {
+    width: 100%;
+    display: flex;
+    outline: none;
+    border: none;
+    gap: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+
+.subscribe-btn button {
+    padding: 10px 26px;
+    background-color: #ffbd3a;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    border-top: 1px solid rgb(58, 53, 65, 0.12);
+    background-color: #fff;
+    padding: 60px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.footer-wrapper .address {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.address p {
+    font-family: "DM Sans", sans-serif;
+    line-height: 25.2px;
+    letter-spacing: 0.2px;
+    color: #222325;
+}
+
+.large {
+    font-size: 18px;
+}
+
+.medium {
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.address .medium {
+    font-weight: 400;
+}
+
+.footer-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.footer-bar-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-bar-inner p {
+    font-family: "DM Sans", sans-serif;
+    line-height: 25.2px;
+    letter-spacing: 0.2px;
+}
+
+.footer-bar-inner .list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list p,
+.copyright-socialmedia p {
+    font-family: "DM Sans", sans-serif;
+    line-height: 25.2px;
+    letter-spacing: 0.2px;
+    font-size: 500;
+    font-size: 16px;
+    color: rgb(51, 51, 51, 0.68);
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    border: 1px solid rgb(58, 53, 65, 0.12);
+}
+
+.copyright-socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-socialmedia .icon {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+@media only screen and (max-width: 992px) {
+    .footer-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .address {
+        display: flex;
+    }
+
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

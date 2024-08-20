@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #f1f1f1;
+    padding-left: 120px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    min-height: 90vh;
+    background-color: #fffdf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 64px 0;
+}
+
+.hero {
+    border: 1px solid #f1f1f1;
+    background-color: #fff;
+    padding: 36px;
+    border-radius: 4px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.hero-description h3 {
+    font-size: 32px;
+    line-height: 35.2px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #222325;
+}
+
+.hero-description p {
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    color: hsl(0, 0%, 20%, 68%);
+    font-family: "DM Sans", sans-serif;
+}
+
+.hero-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-inner .text-field .text {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    font-weight: 400;
+}
+
+.text p {
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    color: rgb(51, 51, 51, 0.68);
+    letter-spacing: 0.2px;
+    line-height: 22.4px;
+}
+
+.text span {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    color: #ff5c2b;
+}
+
+.phone-number-area-span {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.flag-zonacode {
+    display: flex;
+    flex-direction: row;
+}
+
+.phone-number-area-span .logo-flag {
+    height: 48px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(58, 53, 65, 0.12);
+    background-color: #f4f5fa;
+    border-radius: 6px 0 0 6px;
+}
+
+.phone-number-area-span .zona-code {
+    width: 7rem;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2px 0 8px;
+    border: 1px solid #f1f1f1;
+    border-radius: 0  6px 6px 0;
+}
+
+.text-field .input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 6px;
+    outline: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    border: 1px solid #f1f1f1;
+}
+
+.text-field .input-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #f1f1f1;
+    border-radius: 6px;
+}
+
+.text-field .input-field img {
+    cursor: pointer;
+}
+
+.text-field .input-field input,
+.text-field .input input,
+.phone-number-area-span .input input {
+    width: 100%;
+    outline: none;
+    border: none;
+    gap: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+
+.form-inner .lupa-password {
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    color: rgb(51, 51, 51, 0.68);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-field {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-daftar button {
+    color: #fff;
+    background-color: #3ECF4C;
+}
+
+.btn-masuk button {
+    color: #3ECF4C;
+    background-color: #E2FCD9;
+}
+
+.rectangle {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 2px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    z-index: 0;
+}
+
+.rectangle p {
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #4A505C;
+}
+
+.google-login {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.btn-google {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-google p {
+    color: #4A505C;
+}
+
+.google-icon {
+    height: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+}
